@@ -1,0 +1,25 @@
+/*DAIICT college students want to attend an IPL match.A total of N students from the college want to go while only M tickets are available for the match.
+Determine how many students won't be able to book tickets.*/
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		int t,m,n;
+		Scanner sc = new Scanner(System.in);
+		t = sc.nextInt();
+		for(int i=1;i<=t;i++){
+		    n = sc.nextInt();
+		    m = sc.nextInt();
+		    if(m>=n)
+		    System.out.println(0);
+		    else
+		    System.out.println(n-m);
+		}
+	}
+}
