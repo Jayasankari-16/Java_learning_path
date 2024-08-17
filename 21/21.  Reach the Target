@@ -1,0 +1,22 @@
+/*There is a cricket match going on between two teams A and B.
+Team B is batting second and got a target of X runs. Currently, team B has scored Y runs.
+Determine how many more runs Team B should score to win the match.
+Note: The target score in cricket matches is one more than the number of runs scored by the team that batted first.*/
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc= new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0;i<t;i++){
+		   int x = sc.nextInt();
+		   int y = sc.nextInt();
+		   System.out.println(x-y);
+		}
+	}
+}
