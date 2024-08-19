@@ -1,0 +1,25 @@
+/*In a coding contest, there are prizes for the top rankers.
+The prize scheme is as follows:Top 10 participants receive rupees X each.
+Participants with rank11 to 100 (both inclusive) receive rupees Y each.
+Find the total prize money over all the contestants.*/
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0;i<t;i++){
+		    int x = sc.nextInt();
+		    int y = sc.nextInt();
+		    int a =x*10;
+		    int b = y*90;
+		    int c = a+b;
+		    System.out.println(c);
+		}
+	}
+}
