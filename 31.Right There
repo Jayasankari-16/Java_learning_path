@@ -1,0 +1,25 @@
+/*If you wanna party, if you, if you wanna partyThen put your hands upChef wants to host a party with a total of N people.
+However, the party hall has a capacity of X people. 
+Find whether Chef can host the party.*/
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+		int b = sc.nextInt();
+		for(int i=0;i<b;i++){
+		    int x = sc.nextInt();
+		    int y = sc.nextInt();
+		    if(x<=y){
+		        System.out.println("YES");
+		    }else{
+		        System.out.println("NO");
+		    }
+		}
+	}
+}
