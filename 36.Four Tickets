@@ -1,0 +1,25 @@
+/*Four friends want to attend a concert. Each ticket costs X rupees.
+They have decided to go to the concert if and only if the total cost of the tickets does not exceed 1000 rupees.
+Determine whether they will be going to the concert or not.*/
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc =  new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i =0;i<t;i++){
+		    int x = sc.nextInt();
+		    int y = x*4;
+		    if(y<=1000){
+		        System.out.println("YES");
+		    }else{
+		        System.out.println("NO");
+		    }
+	   }
+   }
+}
