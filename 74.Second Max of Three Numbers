@@ -1,0 +1,33 @@
+/*Problem Statement
+Write a program that accepts sets of three numbers, and prints the second-maximum number among the three. */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+		int t= sc.nextInt();
+		for(int i=0;i<t;i++){
+		    int x = sc.nextInt();
+		    int y = sc.nextInt();
+		    int z = sc.nextInt();
+		    if(x>=y && x<z ||x>=z && x<y)
+		    {
+		        System.out.println(x);
+		    }
+		    if(y>=z && y<x ||y>=x && y<z)
+		    {
+		        System.out.println(y);
+		    }
+		    if(z>=y && z<x || z>=x && z<y)
+		    {
+		        System.out.println(z);
+		    }
+		        
+		    }
+	}
+}
