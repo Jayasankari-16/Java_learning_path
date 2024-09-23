@@ -1,0 +1,33 @@
+/*Chef is looking to buy a TV and has shortlisted two models.
+The first one costs A rupees, while the second one costs B rupees.
+Since there is a huge sale coming up on Chefzon, Chef can get a flat discount of C rupees on the first TV, and a flat discount of D rupees on the second one.
+Help Chef determine which of the two TVs would be cheaper to buy during the sale.*/
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0;i<t;i++){
+		    int w = sc.nextInt();
+		    int x = sc.nextInt();
+		    int y = sc.nextInt();
+		    int z = sc.nextInt();
+		    int a = w-y;
+		    int b = x-z;
+		    if(a<b){
+		        System.out.println("FIRST");
+		    }else if(a>b){
+		        System.out.println("SECOND");
+		    }else{
+		        System.out.println("ANY");
+		    }
+      }
+	}
+}
+
