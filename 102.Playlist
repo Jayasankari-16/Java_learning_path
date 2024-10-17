@@ -1,0 +1,23 @@
+/* Chef's playlist contains 3 songs named A,B, and C, each of duration exactlyX minutes.
+Chef generally plays these 3 songs in loop, i.e, A→B→C→A→B→C→A→…
+Chef went on a train journey of N minutes and played his playlist on loop for the whole journey.
+How many times did he listen to the song C completely? */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner sc=new Scanner(System.in);
+	    int t=sc.nextInt();
+	    for(int i=0;i<t;i++){
+	        int x = sc.nextInt();
+	        int y=sc.nextInt();
+	        int z = y*3;
+	        System.out.println(x/z);
+	    }
+	}
+}
