@@ -1,0 +1,27 @@
+/*Chef is ordering food online (instead of cooking) and the bill comes out to be Rs. X. 
+Chef can use one of the following two coupons to avail a discount.
+Get 10 percent off on the bill amountGet a flat discount of Rs. 100 on the bill amount
+What is the maximum discount Chef can avail? */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		for(int i=0;i<t;i++){
+		    int x=sc.nextInt();
+		    int disc=(x*10)/100;
+		    if(disc>100){
+		        System.out.println(disc);
+		    }
+		    else{
+		        System.out.println("100");
+		    }
+		}
+	}
+}
